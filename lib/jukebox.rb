@@ -52,9 +52,14 @@ def run
   help
   puts "Please enter a command:"
   answer = gets.chomp
-  while answer != "exit"
-    case answer
-      when "exit"
-        exit_jukebox
-      when "list"
+  case answer
+    when "list"
+      list
+    when "play"
+      play
+    when "help"
+      help
+    when "exit"
+      exit_jukebox
+    end
   
