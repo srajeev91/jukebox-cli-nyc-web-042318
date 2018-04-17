@@ -61,5 +61,11 @@ def run
       when "help"
         help
     end
+    puts "Please enter a command:"
+    answer = gets.chomp
+  end
+  if answer == "exit"
+    exit_jukebox
+  end
 end
   
