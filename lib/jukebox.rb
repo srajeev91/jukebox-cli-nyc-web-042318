@@ -54,9 +54,9 @@ def run
   answer = gets.chomp
   case answer
     when "list"
-      list
+      list(songs)
     when "play"
-      play
+      play(songs)
     when "help"
       help
     when "exit"
