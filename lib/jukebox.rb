@@ -53,7 +53,7 @@ def run
   puts "Please enter a command:"
   answer = gets.chomp
   case answer
-    == "exit"
-    exit_jukebox
-  elsif 
+    when "exit"
+      exit_jukebox
+    when 
   
