@@ -48,24 +48,20 @@ end
 
 
 
-def run(songs)
+def run
   help
   puts "Please enter a command:"
   answer = gets.chomp
-  while answer != "exit"
-    case answer
-      when "list"
-        list(songs)
-      when "play"
-        play(songs)
-      when "help"
-        help
-    end
-    puts "Please enter a command:"
-    answer = gets.chomp
-  end
-  if answer == "exit"
-    exit_jukebox
+  case answer
+    when "list"
+      list(songs)
+    when "play"
+      play(songs)
+    when "help"
+      help
+    when "exit"
+      exit_jukebox
+      return
   end
 end
   
