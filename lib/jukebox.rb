@@ -49,5 +49,6 @@ end
 
 
 def run
-  help()
+  help
+  puts 
   
