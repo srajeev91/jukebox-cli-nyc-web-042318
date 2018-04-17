@@ -52,7 +52,8 @@ def run
   help
   puts "Please enter a command:"
   answer = gets.chomp
-  if answer == "exit"
+  case answer
+    == "exit"
     exit_jukebox
   elsif 
   
